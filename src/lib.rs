@@ -21,3 +21,8 @@ pub use self::x86_64::*;
 mod arm64;
 #[cfg(any(target_arch = "aarch", target_arch = "aarch64"))]
 pub use self::arm64::*;
+
+#[cfg(target_arch = "loongarch64")]
+mod loongarch64;
+#[cfg(target_arch = "loongarch64")]
+pub use self::loongarch64::*;
